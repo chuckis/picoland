@@ -1,5 +1,5 @@
 
-(setq Nodes 
+(setq *Nodes 
     '((living-room 
         (you are in the living-room. a wizard is snoring loudly on the couch.)) 
       (garden 
@@ -11,7 +11,7 @@
     (location nodes)
         (cadr (assoc location nodes)))
 
-(setq Edges
+(setq *Edges
     '((living-room (garden west door)
         (attic upstairs ladder))
         (garden (living-room east door))
